@@ -21,13 +21,10 @@
 				if (arr[i] > max) {
 					secondMax = max;
 					max = arr[i];
-				} else if (arr[i] > secondMax && arr[i] !== max) {
-					secondMax = arr[i];
 				}
-			}
-			
-			if (secondMax === -Infinity) {
-				return -Infinity;
+				// } else if (arr[i] > secondMax && arr[i] !== max) {
+				// 	secondMax = arr[i];
+				// }
 			}
 			
 			return secondMax;
