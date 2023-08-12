@@ -22,9 +22,10 @@
 					secondMax = max;
 					max = arr[i];
 				}
-				// } else if (arr[i] > secondMax && arr[i] !== max) {
-				// 	secondMax = arr[i];
-				// }
+				//duplicate case
+			 else if (arr[i] > secondMax && arr[i] !== max) {
+					secondMax = arr[i];
+				}
 			}
 			
 			return secondMax;
