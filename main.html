@@ -9,7 +9,9 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-			//Write your code here
+			//Write your code here			
+
+		function secondHighest(arr) {
 			if (arr.length < 2) {
 				return -Infinity;
 			}
@@ -21,12 +23,17 @@
 				if (arr[i] > max) {
 					secondMax = max;
 					max = arr[i];
-				} else if (arr[i] > secondMax) {
+				} else if (arr[i] > secondMax && arr[i] !== max) {
 					secondMax = arr[i];
 				}
 			}
 			
+			if (secondMax === -Infinity) {
+				return -Infinity;
+			}
+			
 			return secondMax;
+		}
 			
 		}
 
